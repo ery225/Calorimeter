@@ -28,6 +28,18 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.end_headers()
             with open('style.css', 'rb') as file:
                 self.wfile.write(file.read())
+        elif self.path == '/2d_calorimeter.jpg':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/css')
+            self.end_headers()
+            with open('2d_calorimeter.jpg', 'rb') as file:
+                self.wfile.write(file.read())
+        elif self.path == '/3d_calorimeter.jpg':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/css')
+            self.end_headers()
+            with open('3d_calorimeter.jpg', 'rb') as file:
+                self.wfile.write(file.read())
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/html')

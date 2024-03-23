@@ -21,6 +21,23 @@ header {
     justify-content: center;
 }
 
+.menu-item {
+    margin-right: 20px; /* Add space between menu items */
+}
+
+.menu-item:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.menu-item img {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.menu-label {
+    text-align: center;
+}
+
 .menu-box {
     width: 50%;
     border: 2px solid black;
